@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zQxNYJ4E4jvaAKmzPkkejx0+UdafANsCLA+UUraerRTp3NpPO+hqunhVAkMVfgRfl892ABghCzDbCCJEX2UBVw==",
+  "success": true,
+  "projectFilePath": "D:\\DesiBlogger\\src\\DesiBlogger-ServicesAndWebApps\\AppCatalog\\AppCatalog.API\\AppCatalog.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\duste\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
