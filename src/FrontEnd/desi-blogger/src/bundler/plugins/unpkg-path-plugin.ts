@@ -13,7 +13,7 @@ export const unpkgPathPlugin = () => {
                 return {path: new URL(args.path, 'https://unpkg.com' + args.resolveDir + '/').href, namespace: 'a'};
             });
             //handle main file of a module
-            build.onResolve({filter: /^\.+\//}, (args: any) => {
+        build.onResolve({filter: /.*/}, (args: any) => {
                 return {path: 'https://unpkg.com/' + args.path, namespace: 'a'};
             });
         }

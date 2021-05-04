@@ -25,8 +25,8 @@ export interface GetAppsAction{
     type: ActionType.GET_APPS   
 };
 
-export interface OpenCurrentAppAction{
-    type: ActionType.OPEN_CURRENT_APP,
+export interface GetCurrentAppAction{
+    type: ActionType.GET_CURRENT_APP,
     payload: string
 };
 
@@ -35,5 +35,5 @@ export interface CloseCurrentAppAction{
     payload: string
 }
 
-export type Action = SaveAppAction | PublishAppAction | DeleteAppAction | GetAppsAction | CreateNewAppAction | OpenCurrentAppAction | CloseCurrentAppAction;
+export type Action = SaveAppAction | PublishAppAction | DeleteAppAction | GetAppsAction | CreateNewAppAction | GetCurrentAppAction | CloseCurrentAppAction;
 

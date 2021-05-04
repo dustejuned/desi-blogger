@@ -9,7 +9,7 @@ export const bundle = async (inputCode: string) => {
     if(!isServiceIntialized){
         await esbuild.initialize({
             worker: true,
-            wasmURL: 'https://unpkg.com/esbuild-wasm@0.8.27/esbuild.wasm',
+            wasmURL: 'https://unpkg.com/esbuild-wasm@0.10.2/esbuild.wasm',
         });
 
         isServiceIntialized = true;
@@ -25,7 +25,9 @@ export const bundle = async (inputCode: string) => {
             define: {
                 'process.env.NODE_ENV': '"production"',
                 global: 'window'
-            }
+            },
+            jsxFactory: '_React.createElement',
+            jsxFragment: '_React.Fragment',
         });
 
         return {
@@ -38,10 +40,5 @@ export const bundle = async (inputCode: string) => {
             code: '',
             err: err
         }
-    }
-    
-
-
-
-   
+    }       
 };

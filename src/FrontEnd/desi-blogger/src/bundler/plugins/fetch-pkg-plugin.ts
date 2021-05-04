@@ -31,7 +31,7 @@ export const fetchPkgPlugin = (inputCode: string) => {
             build.onLoad({ filter: /.*/ }, async (args: any) => {
                 const { data, request } = await axios.get(args.path);
 
-                return { loader: 'jsx', contents: data, resolveDir: new URL('./' + request.responseURL).pathname };
+                return { loader: 'jsx', contents: data, resolveDir: new URL('./', request.responseURL).pathname };
             });
         }
     };

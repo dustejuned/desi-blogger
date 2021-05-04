@@ -1,6 +1,6 @@
 import {ActionType} from '../action-types';
 
-export const SaveAppComponent = (id: string, content: string) => {
+export const SaveCustomComponent = (id: string, content: string) => {
     return {
         type: ActionType.SAVE_APP,
         payload: {
@@ -11,7 +11,7 @@ export const SaveAppComponent = (id: string, content: string) => {
 };
 
 
-export const PublishAppComponent = (id: string, content: string) => {
+export const PublishCustomComponent = (id: string, content: string) => {
     return {
         type: ActionType.PUBLISH_APP,
         payload: {
@@ -21,7 +21,7 @@ export const PublishAppComponent = (id: string, content: string) => {
     };
 };
 
-export const DeleteAppComponent = (id: string) => {
+export const DeleteCustomComponent = (id: string) => {
     return {
         type: ActionType.DELETE_APP,
         payload: {
@@ -30,28 +30,28 @@ export const DeleteAppComponent = (id: string) => {
     };
 };
 
-export const CreateNewAppComponent = () => {
+export const CreateNewCustomComponent = () => {
     return {
         type: ActionType.CREATE_NEW_APP
     };
 };
 
-export const GetAppComponents = () => {
+export const GetCustomComponents = () => {
     return {
         type: ActionType.GET_APPS
     };
 };
 
-export const OpenCurrentAppComponent = (id: string) => {
+export const GetCurrentCustomComponent = (id: string) => {
     return {
-        type: ActionType.OPEN_CURRENT_APP,
+        type: ActionType.GET_CURRENT_APP,
         payload: {
           id  
         }
     };
 };
 
-export const CloseCurrentAppComponent = (id: string) => {
+export const CloseCurrentCustomComponent = (id: string) => {
     return {
         type: ActionType.CLOSE_CURRENT_APP,
         payload: {
